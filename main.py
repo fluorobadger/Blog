@@ -58,7 +58,7 @@ def admin_only(function):
 class Base(DeclarativeBase):
     pass
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('MY_SQLALCHEMY_DATABASE_URI')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
 db = SQLAlchemy(model_class=Base)
 login_manager = LoginManager()
 login_manager.init_app(app)
