@@ -17,6 +17,7 @@ from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 import requests
 import smtplib
 import os
+import email_validator
 
 my_gmail = os.environ.get('MY_GMAIL')
 g_pass = os.environ.get('MY_GPASS')
